@@ -30,7 +30,7 @@ jobs:
         uses: actions/cli@v1
         with:
           inlineScript:
-            az group create --name ${{env.AZ_RG_Name}} --location ${{AZ_RG_Location}}
+            az group create --name ${{env.AZ_RG_Name}} --location ${{env.AZ_RG_Location}}
       - name: deploy storage 
         uses: actions/arm-deploy@v1
         with:
